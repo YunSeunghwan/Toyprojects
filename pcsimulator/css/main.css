@@ -1,0 +1,75 @@
+:root {
+	--blockcolor: #f0f0f0;
+}
+.CPU {
+	position: absolute;
+	left:6vh;
+	top:6vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.mainboard {
+	position: absolute;
+	left:34vh;
+	top:6vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.memory {
+	position: absolute;
+	left:62vh;
+	top:6vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.graphiccard {
+	position: absolute;
+	left:6vh;
+	top:34vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.disk {
+	position: absolute;
+	left:34vh;
+	top:34vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.odd {
+	position: absolute;
+	left:62vh;
+	top:34vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.power {
+	position: absolute;
+	left:6vh;
+	top:62vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.case {
+	position: absolute;
+	left:34vh;
+	top:62vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
+.etc {
+	position: absolute;
+	left:62vh;
+	top:62vh; 
+	height:20vh;
+	width:20vh;
+	background-color : var(--blockcolor);
+}
