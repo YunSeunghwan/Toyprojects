@@ -14,3 +14,15 @@ class Board {
 	
   
 }
+
+let board = new Board();
+
+function play() {
+  board.reset(); // 보드판 초기화
+  console.table(board.grid);
+
+  let piece = new Piece(ctx);
+  piece.draw(); // 테트로미노 그리기
+
+  board.piece=piece;
+}
