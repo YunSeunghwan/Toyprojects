@@ -10,15 +10,25 @@ class Piece {
     this.spawn();
   }
 
+  randomizeTetrominoType(noOfTypes) {
+    return Math.floor(Math.random() * noOfTypes + 1);
+  }
+
   spawn() {
-    this.color = 'blue';
-    this.shape = [
-      [2, 0, 0],
-      [2, 2, 2],
-      [0, 0, 0]
-    ];
+    // this.color = 'blue';
+    // this.shape = [
+    //   [2, 0, 0],
+    //   [2, 2, 2],
+    //   [0, 0, 0]
+    // ];
+
+    // Play 버튼을 누를 때마다 다른 모양과 색상의 조각들 생성
+    const typeId = this.randomizeTetrominoType(COLORS.length);
+    this.shape = SHAPES[typeId];
+    this.color = COLORS[typeId];
+
     // 시작 위치
-    this.x = 3;
+    this.x = 0;
     this.y = 0;
   }
 
@@ -31,3 +41,10 @@ class Piece {
       });
     });
   }
+	
+    // 키보드로 움직이기
+  move(p) {
+    this.x = p.x;
+    this.y = p.y;
+  }
+}
