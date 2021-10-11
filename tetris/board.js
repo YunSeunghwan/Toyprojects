@@ -148,6 +148,7 @@ class Board {
   clearLines() {
     let lines = 0; // 지운 라인 수
 
+	// 라인 지우기
     this.grid.forEach((row, y) => {
       // 모든 값이 0보다 큰지 비교한다.
       if (row.every(value => value > 0)) {
@@ -160,7 +161,7 @@ class Board {
         this.grid.unshift(Array(COLS).fill(0));
       } 
     });
-
+	// 후속조치
     if (lines > 0) {    
       // 지워진 라인들이 있다면 점수를 추가
       account.score += this.getLineClearPoints(lines);  

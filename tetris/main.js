@@ -39,7 +39,7 @@ moves = {
   [KEY.LEFT]: p => ({...p, x: p.x - 1}),
   [KEY.RIGHT]: p => ({...p, x: p.x + 1}),
   [KEY.DOWN]: p => ({...p, y: p.y + 1}),
-  [KEY.SPACE]: p => ({ ...p, y: p.y + 1 }),
+  [KEY.SPACE]: p => ({...p, y: p.y + 1 }),
   [KEY.UP]: p => board.rotate(p),
 }
 
@@ -72,6 +72,7 @@ document.addEventListener('keydown', event => {
     pause();
   }
   
+  // 키입력에 따른 블럭 이동
   if(moves[event.keyCode]) {
     event.preventDefault();
     

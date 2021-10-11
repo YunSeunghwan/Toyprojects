@@ -5,7 +5,6 @@ const ROWS = 20;
 const BLOCK_SIZE = 30;
 const LINES_PER_LEVEL = 10;
 
-// 키코드로 키매핑
 const KEY = {
   ESC: 27,
   SPACE: 32,
@@ -16,7 +15,6 @@ const KEY = {
   P: 80,
   Q: 81
 }
-// 불변으로 만드는 값은 1레벨에서만 동작한다 -> 객체 안에 하위의 객체는 불변하게 만들 수 없다.
 Object.freeze(KEY);
 
 const COLORS = [  
@@ -43,7 +41,6 @@ const SHAPES = [
 ];
 Object.freeze(SHAPES);
 
-// 점수
 const POINTS = {
   SINGLE: 100,
   DOUBLE: 300,
@@ -54,7 +51,6 @@ const POINTS = {
 }
 Object.freeze(POINTS);
 
-// 난이도
 const LEVEL = {
   0: 800,
   1: 720,
