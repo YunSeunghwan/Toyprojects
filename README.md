@@ -10,11 +10,11 @@
 
 ##### 2021-10-10
 * 테트리스 코드읽기   
-참고 블로그 : <https://likejirak.tistory.com/109>
+[참고 블로그](https://likejirak.tistory.com/109)
 
 ##### 2021-10-09
 * 개발환경 구축   
-[마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601{:target="_blank"})
+[마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
 
 
 
