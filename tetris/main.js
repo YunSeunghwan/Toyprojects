@@ -43,6 +43,14 @@ moves = {
   [KEY.UP]: p => board.rotate(p),
 }
 
+moves2 = {
+  [KEY.LEFT2]: p => ({...p, x: p.x - 1}),
+  [KEY.RIGHT2]: p => ({...p, x: p.x + 1}),
+  [KEY.DOWN2]: p => ({...p, y: p.y + 1}),
+  [KEY.SPACE2]: p => ({...p, y: p.y + 1 }),
+  [KEY.UP2]: p => board.rotate(p),
+}
+
 time = { start: 0, elapsed: 0, level: 1000 };
 
 function animate(now=0){
@@ -71,7 +79,7 @@ document.addEventListener('keydown', event => {
   if (event.keyCode === KEY.P) {
     pause();
   }
-  
+  console.log(event.keyCode)
   // 키입력에 따른 블럭 이동
   if(moves[event.keyCode]) {
     event.preventDefault();
